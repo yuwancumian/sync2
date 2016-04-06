@@ -1,0 +1,29 @@
+{
+  "name": "sync2",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./index.js",
+  "preferGlobal": "true",
+  "bin": {
+    "sync2": "./index.js"
+   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yuwancumian/sync2.git"
+  },
+  "keywords": [
+    "keyword1",
+    "keyword2"
+  ],
+  "author": "yuwancumian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuwancumian/sync2/issues"
+  },
+  "homepage": "https://github.com/yuwancumian/sync2",
+  "dependencies": {
+  }
+}
