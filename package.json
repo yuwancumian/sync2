@@ -5,8 +5,8 @@
   "main": "./index.js",
   "preferGlobal": "true",
   "bin": {
-    "sync2": "./index.js"
-   },
+    "sync": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,5 +25,7 @@
   },
   "homepage": "https://github.com/yuwancumian/sync2",
   "dependencies": {
+    "shelljs": "^0.6.0",
+    "yargs": "^4.4.0"
   }
 }

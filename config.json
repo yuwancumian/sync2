@@ -1,0 +1,10 @@
+{
+	"project1":{
+		"src": "/Users/huan/ExpressSite/beyondadmin/dist/*",
+		"dest": "/Users/huan/Projects_svn/lsf_admin/"
+	},
+	"project2":{
+		"src": "2-src",
+		"dest": "2-dest"
+	}
+}
