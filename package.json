@@ -1,6 +1,6 @@
 {
   "name": "sync2",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "./index.js",
   "preferGlobal": "true",
@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/yuwancumian/sync2",
   "dependencies": {
-    "shelljs": "^0.6.0",
-    "yargs": "^4.4.0"
+    "shelljs": "^0.6.0"
   }
 }

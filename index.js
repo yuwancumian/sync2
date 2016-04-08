@@ -2,9 +2,6 @@
 require('shelljs/global');
 var path = require('path');
 var cfg = require('./config');
-var argv = require('yargs')
-           .alias('o','output')             
-           .argv;
 
 (function(){
 
