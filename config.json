@@ -1,5 +1,5 @@
 {
-	"project1":{
+	"lsf_admin":{
 		"src": "/Users/huan/ExpressSite/beyondadmin/dist/*",
 		"dest": "/Users/huan/Projects_svn/lsf_admin/"
 	},

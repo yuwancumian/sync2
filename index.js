@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 require('shelljs/global');
 var path = require('path');
+var chalk = require('chalk');
 var cfg = require('./config');
+
 
 (function(){
 
@@ -20,10 +22,10 @@ var cfg = require('./config');
 	} else {
 		exec('rsync -avP ' + src +" " + dest);
 	}
-
-	console.log("src:" + src);
-	console.log("dest:" + dest);
+	console.log("");
+	console.log(chalk.green(project +" has been synced!"))
+	console.log("");
+	console.log("Sync files from "+ chalk.magenta(src) + " to " + chalk.magenta(dest));
 	
-
 })();
 
