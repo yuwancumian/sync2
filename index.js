@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 require('shelljs/global');
-var path = require('path');
 var chalk = require('chalk');
 var cfg = require('./config');
 
@@ -20,17 +19,20 @@ var cfg = require('./config');
 		}
 
 		if (src === "github") {
-			//cd(getUserHome());
-			console.log(path.join(userHome(),cfg[project].dest));
-			//console.log(cfg[project].dest);
-			//exec('git pull origin master');
+
+			dest2 = dest.substr(2);
+			cd(getUserHome()+dest2);
+			console.log(dest2);
+			exec('git pull origin master');
+			
 		} else {
 			exec('rsync -avP ' + src +" " + dest);
+			console.log("");
+			console.log(chalk.green(project +" has been synced!"))
+			console.log("");
+			console.log("Sync files from "+ chalk.magenta(src) + " to " + chalk.magenta(dest));
 		}
-		console.log("");
-		console.log(chalk.green(project +" has been synced!"))
-		console.log("");
-		console.log("Sync files from "+ chalk.magenta(src) + " to " + chalk.magenta(dest));
+		
 	}
 	
 })();
