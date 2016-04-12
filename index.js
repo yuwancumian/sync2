@@ -21,10 +21,9 @@ var cfg = require('./config');
 		if (src === "github") {
 
 			dest2 = dest.substr(2);
-			cd(getUserHome()+dest2);
-			console.log(dest2);
+			cd(getUserHome() + "/" + dest2);
 			exec('git pull origin master');
-			
+
 		} else {
 			exec('rsync -avP ' + src +" " + dest);
 			console.log("");
